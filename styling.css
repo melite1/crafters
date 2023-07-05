@@ -7,7 +7,15 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.totalwrapper{
     background-color: #F0EEEE;
+    width: 100%;
+    
     
 }
 
