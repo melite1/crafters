@@ -4,8 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Screen</title>
+    <link rel="stylesheet" href="/styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+        <div class="totalwrapper">        
+            <!-- the header contains the icons, the profile picture and the welcome message -->
+            <header>
+                <div class="profile_container">
+                    <div class="iconcontainer">    
+                        <div class="timecontainer">
+                            <p>12:30</p>
+                        </div>
+                        <div class="networkcontainer">
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.0875 12.1H5.5125C5.22244 12.1 4.9875 12.3461 4.9875 12.65V19.25C4.9875 19.5539 5.22244 19.8 5.5125 19.8H7.0875C7.37756 19.8 7.6125 19.5539 7.6125 19.25V12.65C7.6125 12.3461 7.37756 12.1 7.0875 12.1ZM2.8875 15.4H1.3125C1.02244 15.4 0.787498 15.6461 0.787498 15.95V19.25C0.787498 19.5539 1.02244 19.8 1.3125 19.8H2.8875C3.17756 19.8 3.4125 19.5539 3.4125 19.25V15.95C3.4125 15.6461 3.17756 15.4 2.8875 15.4ZM11.2875 8.80001H9.7125C9.42244 8.80001 9.1875 9.04614 9.1875 9.35001V19.25C9.1875 19.5539 9.42244 19.8 9.7125 19.8H11.2875C11.5776 19.8 11.8125 19.5539 11.8125 19.25V9.35001C11.8125 9.04614 11.5776 8.80001 11.2875 8.80001ZM15.4875 5.50001H13.9125C13.6224 5.50001 13.3875 5.74614 13.3875 6.05001V19.25C13.3875 19.5539 13.6224 19.8 13.9125 19.8H15.4875C15.7776 19.8 16.0125 19.5539 16.0125 19.25V6.05001C16.0125 5.74614 15.7776 5.50001 15.4875 5.50001ZM19.6875 2.20001H18.1125C17.8224 2.20001 17.5875 2.44614 17.5875 2.75001V19.25C17.5875 19.5539 17.8224 19.8 18.1125 19.8H19.6875C19.9776 19.8 20.2125 19.5539 20.2125 19.25V2.75001C20.2125 2.44614 19.9776 2.20001 19.6875 2.20001Z" fill="black"/>
+                                <rect x="10.92" y="2.64001" width="0.84" height="14.08" fill="#D9D9D9"/>
+                            </svg>
+                                
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_7)">
+                                <path d="M20.833 7.52399C15.0196 1.89096 5.97811 1.89302 0.167018 7.52399C-0.051513 7.73574 -0.0557787 8.09427 0.155534 8.31393L1.27903 9.48164C1.4805 9.69133 1.80469 9.6958 2.01403 9.49471C6.80203 4.89946 14.1973 4.89843 18.9863 9.49471C19.1956 9.6958 19.5198 9.69099 19.7213 9.48164L20.8448 8.31393C21.0558 8.09427 21.0515 7.73574 20.833 7.52399ZM10.5 14.3C9.34008 14.3 8.4 15.2848 8.4 16.5C8.4 17.7151 9.34008 18.7 10.5 18.7C11.6599 18.7 12.6 17.7151 12.6 16.5C12.6 15.2848 11.6599 14.3 10.5 14.3ZM17.1501 11.4266C13.3681 7.92274 7.6276 7.92652 3.84989 11.4266C3.62349 11.6363 3.61627 12.0003 3.83119 12.2224L4.96125 13.3908C5.15813 13.5943 5.4751 13.608 5.68477 13.4183C8.43938 10.9237 12.5669 10.9292 15.3149 13.4183C15.5246 13.608 15.8415 13.5946 16.0384 13.3908L17.1685 12.2224C17.3837 12.0003 17.3762 11.6359 17.1501 11.4266Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_6_7">
+                                <rect width="21" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                            <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.55 7.7V9.9H1.7V12.1H2.55V14.3H15.3V7.7H2.55ZM2.125 5.5H15.725C16.4292 5.5 17 6.23872 17 7.15V14.85C17 15.7613 16.4292 16.5 15.725 16.5H2.125C1.42083 16.5 0.85 15.7613 0.85 14.85V14.3H0.637499C0.285414 14.3 0 13.9306 0 13.475V8.525C0 8.06936 0.285414 7.7 0.637499 7.7H0.85V7.15C0.85 6.23872 1.42083 5.5 2.125 5.5ZM5.95 8.8H14.45V13.2H5.95V8.8Z" fill="black"/>
+                            </svg>
+                                
+                        </div>
+                    </div>
+                    <div class="pixcontainer">
+                        <img src="/images/pix.png" alt="user">
+                        
+                    </div>
+                    <div class="welcomecontainer">
+                        <p>Welcome Grace!</p>
+                    </div>
+                </div>
+                
+            </header>
+            <main>
+                <hr>
+                <!-- person details container starts here -->
+                <div class="personalcontainer card">
+                    <div class="iconpara">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 16C16 16 14.5 14 12 14C9.5 14 8 16 8 16" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9H9.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 9H15.01" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                        <p>Personal details</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- personal details container ends here -->
+                <!-- Address container starts here -->
+                <div class="addresscontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m3 9l9-7l9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g></svg>
+
+                        <p>Address</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- Address container ends here -->
+                <!-- payment method container starts here -->
+                <div class="paymentcontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M2 10h20"/></g></svg>
+                        <p>Payment Method</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- Payment method container ends here -->
+                <!-- About container starts here -->
+                <div class="aboutcontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"/></svg>
+
+                        <p>About</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- About container ends here -->
+                <!-- Help container starts here -->
+                <div class="helpcontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M11.95 18q.525 0 .888-.363t.362-.887q0-.525-.362-.888t-.888-.362q-.525 0-.887.363t-.363.887q0 .525.363.888t.887.362Zm-.9-3.85h1.85q0-.825.188-1.3t1.062-1.3q.65-.65 1.025-1.238T15.55 8.9q0-1.4-1.025-2.15T12.1 6q-1.425 0-2.313.75T8.55 8.55l1.65.65q.125-.45.563-.975T12.1 7.7q.8 0 1.2.438t.4.962q0 .5-.3.938t-.75.812q-1.1.975-1.35 1.475t-.25 1.825ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Zm0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20Zm0-8Z"/></svg>
+                        <p>Help </p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- Help container ends here -->
+                <!-- Settings container starts here -->
+                <div class="settingscontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13 2v4l-2 1l-3-3l-4 4l3 3l-1 2H2v6h4l1 2l-3 3l4 4l3-3l2 1v4h6v-4l2-1l3 3l4-4l-3-3l1-2h4v-6h-4l-1-2l3-3l-4-4l-3 3l-2-1V2Z"/><circle cx="16" cy="16" r="4"/></g></svg>
+                        <p>Settings</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- Settings container ends here -->
+                <!-- logout container starts here -->
+                <div class="logoutcontainer card">
+                    <div class="iconpara">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h7v2H5v14h7v2H5Zm11-4l-1.375-1.45l2.55-2.55H9v-2h8.175l-2.55-2.55L16 7l5 5l-5 5Z"/></svg>
+                        <p>Log Out details</p>
+
+                    </div>  
+                    <div class="arrow">
+                        <a href="#">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502Z" fill="black"/>
+                            </svg>
+                        </a>
+
+                    </div>  
+            
+
+                </div>
+                <!-- Log Out container ends here -->
+
+
+
+            </main>
+        </div>        
     
 </body>
 </html>

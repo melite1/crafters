@@ -1,0 +1,89 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.totalwrapper{
+    background-color: #F0EEEE;
+    width: 100%;
+    
+    
+}
+
+.profile_container{
+    background-color: #32CD32;
+    height: 256px;
+}
+
+.iconcontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pixcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+hr{
+    margin-top: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.05)
+
+    
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 25px; 
+    height: 50px; 
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 30px;
+    
+
+}
+
+.iconpara{
+    width: 60%;
+    padding: 16px;
+    display: flex;    
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iconpara p {
+    margin-left: 25px;
+}
+
+.arrow{
+    
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+}
